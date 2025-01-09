@@ -1,4 +1,4 @@
 streamlit
 numpy
 matplotlib
-SALib
+git+https://github.com/edsaac/SALib
