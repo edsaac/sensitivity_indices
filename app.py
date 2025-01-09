@@ -95,7 +95,7 @@ def simple_model():
     ndY = chunk_model(param_values)
 
     # Analyze results
-    Si = chunck_analysis(ndY)
+    Si = chunck_analysis(problem, ndY)
 
     # Rearange for plotting
     fo_names = problem["names"]
@@ -280,7 +280,7 @@ def non_linear_model():
     ndY = chunk_model(param_values)
 
     # Analyze results
-    Si = chunck_analysis(ndY)
+    Si = chunck_analysis(problem, ndY)
 
     # Rearange for plotting
     fo_names = problem["names"]
