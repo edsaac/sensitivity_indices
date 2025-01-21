@@ -452,10 +452,16 @@ def a_benchmark():
 
 
 if __name__ == "__main__":
+    st.set_page_config(
+        page_title="Global Sensitivity Indices · edsaac.me",
+        page_icon=":cat:",
+        menu_items=dict(About="https://edsaac.me"),
+    )
+
     with open("assets/style.css") as css:
         st.html(f"""<style>{css}</style>""")
 
-    st.title("Sensitivity indices")
+    st.title("Global sensitivity indices")
 
     pages = [
         st.Page(simple_model, title="A linear example"),
